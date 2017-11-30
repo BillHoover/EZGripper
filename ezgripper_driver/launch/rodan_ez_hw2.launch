@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<launch>
+   
+   <node pkg="ezgripper_driver" type="ezgripper.py" name="ezgripper_rodan_right" output="screen">  
+    
+    <param name="~port" value="/dev/rightgripper"/>
+    <param name="~baud" value="57600"/>
+     
+    <rosparam param="grippers">{right12:[1,2], right1:[1], right2:[2]}</rosparam>
+   </node>
+
+</launch>
